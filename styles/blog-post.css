@@ -37,3 +37,17 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+.social-media {
+	display: grid;
+}
+
+.share-button {
+	grid-template-rows: bt;
+}
+
+@media (min-width: 600px) {
+	.social-media {
+		grid-template-areas: "bt bt bt";
+	}
+}

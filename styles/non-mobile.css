@@ -1,0 +1,36 @@
+@media (min-width: 600px) {
+	body {
+		min-height: 100vh;
+		margin: 0;
+
+		display: grid;
+		grid-template-areas: "hd hd hd hd" "sd main main main" "ft ft ft ft";
+		grid-template-rows: auto 1fr auto;
+		grid-gap: 2rem;
+	}
+
+	header {
+		grid-area: hd;
+	}
+
+	aside {
+		grid-area: sd;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	.articles {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.description {
+		margin: 2%;
+	}
+
+	footer {
+		grid-area: ft;
+	}
+}
